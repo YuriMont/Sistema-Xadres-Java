@@ -1,14 +1,15 @@
 
 package sistemaxadres;
 
-import Tabuleiro.Board;
+
+import Xadres.PartidaXadres;
 
 
 public class SistemaXadres {
 
     public static void main(String[] args) {
-        Board board = new Board(8, 8);
-        System.out.println(board);
+        PartidaXadres partidaXadres = new PartidaXadres();
+        UI.mostrarBoard(partidaXadres.getPecas());
     }
     
 }
