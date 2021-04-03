@@ -1,13 +1,14 @@
 
 package sistemaxadres;
 
-import Tabuleiro.Posicao;
+import Tabuleiro.Board;
+
 
 public class SistemaXadres {
 
     public static void main(String[] args) {
-        Posicao pos = new Posicao(3, 5);
-        System.out.println(pos);
+        Board board = new Board(8, 8);
+        System.out.println(board);
     }
     
 }
