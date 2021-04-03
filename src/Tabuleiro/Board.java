@@ -26,5 +26,9 @@ public class Board {
     public Peca peca(Posicao posicao){
         return pecas[posicao.getFileira()][posicao.getColuna()];
     }
+    public void lugarPeca(Peca peca, Posicao posicao){
+        pecas[posicao.getFileira()][posicao.getColuna()] = peca;
+        peca.posicao = posicao;
+    }
  
 }

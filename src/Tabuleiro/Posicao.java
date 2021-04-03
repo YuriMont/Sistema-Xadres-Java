@@ -8,9 +8,10 @@ public class Posicao {
     public Posicao() {
     }
 
-    public Posicao(int coluna, int fileira) {
-        this.coluna = coluna;
+    public Posicao(int fileira, int coluna ) {
         this.fileira = fileira;
+        this.coluna = coluna;
+        
     }
     public int getFileira() {
         return fileira;
@@ -29,7 +30,7 @@ public class Posicao {
 
     @Override
     public String toString() {
-        return coluna+", "+fileira;
+        return fileira+", "+coluna;
     }
     
 }
