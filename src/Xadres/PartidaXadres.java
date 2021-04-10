@@ -22,9 +22,12 @@ public class PartidaXadres {
         }
         return mat;
     } 
+    private void lugarDaNovaPeca(char coluna, int fileira, PecaXadres peca){
+        board.lugarPeca(peca, new PosicaoXadres(coluna, fileira).toPosicao());
+    }
     private void configuraçãoInicial(){
-        board.lugarPeca(new Torre(Cor.BRANCO, board), new Posicao(2, 1));
-        board.lugarPeca(new Rei(Cor.PRETO, board), new Posicao(0, 4));
-        board.lugarPeca(new Rei(Cor.BRANCO, board), new Posicao(7, 4));
+        lugarDaNovaPeca('b', 6, new Torre(Cor.BRANCO, board));
+        lugarDaNovaPeca('e', 8, new Rei(Cor.PRETO, board));
+        lugarDaNovaPeca('e', 1, new Rei(Cor.BRANCO, board));
     }
 }
